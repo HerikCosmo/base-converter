@@ -1,11 +1,22 @@
 function converter(){
-    let numBinario = document.getElementById('numeroBinario').value
+    let numBinario = document.getElementById('numeroBinario')
     let numDecimal = document.getElementById('numeroDecimal')
 
-    if(numBinario == '') return alert('Insira um valor binário')
-    numBinario.split('').forEach(numero => {
-        if(numero !== '0' && numero !== '1') return alert('Apenas 0 ou 1')
+    if(numBinario.value == '') return alert('Insira um valor binário')
+
+    const numeros = numBinario.value.split('')
+    let teste = true
+
+    numeros.forEach(numero => {
+        if(numero !== '0' && numero !== '1') teste = false
     })
 
-    numDecimal.value = parseInt(numBinario, 2)
+    if(teste){
+        numDecimal.value = parseInt(numBinario.value, 2) 
+    }else{
+        alert('apenas 0 ou 1')
+        numBinario.value = ''
+        numDecimal.value = ''
+    }   
+    
 }
