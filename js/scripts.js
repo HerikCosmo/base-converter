@@ -1,16 +1,11 @@
-document.getElementById('botao').addEventListener("click", function() {
-    numDec = document.getElementById('numeroDecimal')
-    numBinario = document.getElementById('numeroBinario').value
-    binToDec(numBinario)
-})
+function converter(){
+    let numBinario = document.getElementById('numeroBinario').value
+    let numDecimal = document.getElementById('numeroDecimal')
 
-function binToDec(numero){
-    if(numero){
-        console.log(numero)
-        numDec.value = parseInt(numero, 2)
-    }else{
-        numDec.value = ''
-    }
-    
+    if(numBinario == '') return alert('Insira um valor binário')
+    numBinario.split('').forEach(numero => {
+        if(numero !== '0' && numero !== '1') return alert('Apenas 0 ou 1')
+    })
+
+    numDecimal.value = parseInt(numBinario, 2)
 }
-
