@@ -5,13 +5,13 @@ function converter(){
     if(numBinario.value == '') return alert('Insira um valor binário')
 
     const numeros = numBinario.value.split('')
-    let teste = true
+    let validar = true
 
     numeros.forEach(numero => {
-        if(numero !== '0' && numero !== '1') teste = false
+        if(numero !== '0' && numero !== '1') validar = false
     })
 
-    if(teste){
+    if(validar){
         numDecimal.value = parseInt(numBinario.value, 2) 
     }else{
         alert('apenas 0 ou 1')
