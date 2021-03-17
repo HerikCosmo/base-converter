@@ -1,6 +1,6 @@
 ## base-converter
 Um conversor de bases de números binários para decimal
-<img>https://i.imgur.com/flLXIoX.png</img>
+![design site](https://i.imgur.com/flLXIoX.png)
 
 ### Adicionado um número binário, o sistema verifica é válido e retorna na tela o número correspondente.
 
