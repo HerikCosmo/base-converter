@@ -2,7 +2,7 @@
 Um conversor de bases de números binários para decimal
 ![design site](https://i.imgur.com/flLXIoX.png)
 
-### Adicionado um número binário, o sistema verifica é válido e retorna na tela o número correspondente.
+### Adicionado um número binário, o sistema verifica se é válido e retorna na tela o número correspondente.
 
 <hr>
-<h3> Nenhum requisito necessário
+<h3> Nenhum requisito necessário</h3>
